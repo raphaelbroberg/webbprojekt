@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Pollos Hermanos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="contactus.css">
+
+  <div class="banner">
+    <img src="242731706_629385025114450_882571064577353266_n.jpg" alt="Banner Image">
+  </div>
+
+  <nav class="navbar">
+    <a href="our_food.html" class="nav-link">OUR FOOD</a>
+    <a href="contact_us.html" class="nav-link">CONTACT US</a>
+    <a href="your_order.html" class="nav-link">YOUR ORDER</a>
+  </nav>
+
+  <header>
+    <a href="index.html" class="logo">
+      <img src="Los_Pollos_Hermanos_logo.png" alt="Logo">
+    </a>
+</header>
+
+<link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    
+    <div class="help-container">
+        <h1 class="help-header">How can we help you?</h1>
+        <p class="help-prompt">Search for frequently asked questions</p>
+        <input class="search-bar" type="text" placeholder="Search...">
+     <div class="button-container">
+</div>
+
+<div class="button-container">
+    <button id="job-application-button">Can I Apply for a Job with You?</button>
+    <button>Someone messed up my order, what do i do?</button>
+ </div>
+
+ <div id="popup" class="popup-container">
+    <div class="popup">
+      <span class="close">&times;</span>
+      <h2>Job Application Form</h2>
+      <form id="job-application-form">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br>
+        <input type="submit" value="Submit">
+        <input type="button" value="Clear All" id="clear-all">
+      </form>
+    </div>
+
+    <button id="contact-us-button">Send us an Email</button>
+ </div>
+
+ <div class="email-container">
+    <p>We strive to respond to your email within 24 hours.</p>
+    <p><a href="mailto:info@lospolloshermanos.com">Send email now</a></p>
+ </div>
+
+ <script>
+    const button = document.getElementById("job-application-button");
+    const popup = document.getElementById("popup");
+    const closeButton = document.getElementsByClassName("close")[0];
+    const clearAllButton = document.getElementById("clear-all");
+
+    button.addEventListener("click", () => {
+      popup.style.display = "block";
+    });
+
+    closeButton.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+
+    window.addEventListener("click", (event) => {
+      if (event.target == popup) {
+        popup.style.display = "none";
+      }
+    });
+
+    clearAllButton.addEventListener("click", () => {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("phone").value = "";
+    });
+ </script>
+
+      
+
+</body>
+</html>
