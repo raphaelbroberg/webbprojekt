@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Los Pollos Hermanos</title>
+  <title>Your Order</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Los_Pollos_Hermanos_logo.png">
 
   <div class="banner">
     <img src="242731706_629385025114450_882571064577353266_n.jpg" alt="Banner Image">
@@ -24,43 +25,60 @@
       <img src="Los_Pollos_Hermanos_logo.png" alt="Logo">
     </a>
 </header>
-
-<link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
-   
+  <!-- Behållare för beställning -->
   <div class="order-container">
-    <div class="red-div">
-      <h1>Your Order</h1>
+    <!-- Röd behållare för beställningsdetaljer -->
+    <div class="red-div3">
+      <!-- Rubrik för beställningen -->
+      <h1 class="total">Your Order</h1>
+
+      <!-- Enhet för varje menyobjekt -->
       <div class="menu-items">
+        <!-- Bild för menynobjektet -->
         <img class="menu-item-img" src="88280863_211521666900790_4508480917831942144_n.jpg" alt="Burger">
+        <!-- Text för menynobjektet -->
         <div class="menu-item-text">Crispy Chicken Burger <br><br><br> $9.99 Co.</div>
       </div>
+      <!-- Upprepas -->
       <div class="menu-items">
         <img class="menu-item-img" src="174805927_526800672039553_3438565972186796613_n.jpg" alt="Fries">
         <div class="menu-item-text">Curly Fries <br><br><br> Free with Co.</div>
     </div>
   
-    <button class="remove-btn" onclick="removeLastMenuItem()">Remove all</button>
-  
+    <!-- Fejkknapp för att ta bort alla objekt från beställningen -->
+    <button class="remove-btn">Remove all</button>
     </div>
   
+    <!-- Röd behållare för beställningssammanställning -->
     <div class="red-div2">
-      <h1>Order Total</h1>
-      <div class="menu-items">
-        <div class="menu-item-text">Subtotal $12.48</div>
+      <!-- Rubrik för beställningssammanställning -->
+      <h1 class="total">Order Total</h1>
+      <!-- Enhet för varje sammanställningsdetalj -->
+      <div class="order-total">
+        <!-- Detalj: Subtotal -->
+        <div>Subtotal</div>
+        <!-- Belopp för Subtotal -->
+        <div>$12.48</div>
       </div>
-      <br>
-      <br>
-      <div class="menu-items">
-        <div class="menu-item-text">Delivery fee 4.99</div>
+      <div class="order-total">
+        <div>Delivery fee</div>
+        <div>$4.99</div>
+    </div>
+    <!-- Skapar lite mellanrum -->
+    <br>
+    <br>
+
+    <!-- Upprepas -->
+    <div class="total">
+      <h1>Total</h1>
+      <h1>$17.47</h1>
     </div>
     <br>
-    <br>
-    <br>
-    <br>
-    <button class="remove-btn" onclick="removeLastMenuItem()">Purchase</button>
+    <!-- Knapp för att genomföra köpet -->
+    <button class="remove-btn">Purchase</button>
   </div>
     
 </body>

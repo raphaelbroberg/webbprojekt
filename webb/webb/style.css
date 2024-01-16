@@ -1,12 +1,12 @@
-
-
+/* Grundläggande stilar för sidokroppen */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(227, 186, 52);
-    color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(227, 186, 52);
+  color: #333;
 }
-  
+
+/* Stilar för navigeringsfältet */
 .navbar {
   background-color: rgb(192, 62, 34);
   display: flex;
@@ -15,225 +15,225 @@ body {
   padding: 0.5rem;
 }
 
+/* Stilar för navigeringslänkar */
 .nav-link {
   color: rgb(24, 24, 24);
   text-decoration: none;
   text-align: center;
   font-family: 'Caprasimo', serif;
-  font-size: 25px;
+  font-size: 150%;
   padding: 0.75rem 1rem;
 }
-/* Logo styles */
+
+/* Stilar för logotyp */
 .logo {
   position: absolute;
   top: 10px;
   left: 15vw;
-  text-decoration: none; /* Remove the underline from the link */
+  text-decoration: none;
 }
 
 .logo img {
-  max-height: 180px; /* Adjust the max-height as needed */
-  cursor: pointer; /* Change the cursor to a pointer when hovering over the image */
+  max-height: 110px;
+  cursor: pointer;
 }
-  
-  /* Banner styles */
-  .banner {
-    text-align: center;
-    height: 200px; /* Adjust the height as needed */
-    position: relative;
-  }
-  
-  .banner img {
-    width: 100%;
-    height: 100%; /* Ensure the image fills the banner */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-  }
 
-  .restask {
-    font-size: 25px;
-    font-family: system-ui, Roboto, sans-serif;
-    margin-left: 5%;
-    margin-top: 3%;
-  }
+/* Stilar för banner */
+.banner {
+  text-align: center;
+  height: 18vh;
+  position: relative;
+}
 
-  .addask {
-    font-size: 20px;
-    font-family: system-ui, Roboto, sans-serif;
-    margin-left: 5%;
-    margin-top: -1%;
-    }
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  .search-bar {
-    width: 500px;
-    height: 40px;
-    border-radius: 20px;
-    border: 0px solid #1b1b1b;
-    padding: 10px;
-    font-size: 16px;
-    box-sizing: border-box;
-    box-shadow: 1px 1px 5px 1px rgba(104, 104, 104, 0.8);
-    background-color: #c7c7c7;
-    outline: none;
-    margin-left: 3%;
-    margin-top: -3%;
-  }
+/* Stilar för texter och sökfält */
+.restask {
+  font-size: 25px;
+  font-family: system-ui, Roboto, sans-serif;
+  margin-left: 5%;
+  margin-top: 3%;
+}
 
-  .red-div {
-    background-color: rgb(192, 62, 34);
-    border-radius: 20px;
-    padding: 20px;
-    color: rgb(24, 24, 24);
-    width: 30%;
-    margin-left: 5%;
-    margin-top: 1%;
-    font-size: 150%;
-    font-family: 'Caprasimo', serif;
-    
+.addask {
+  font-size: 20px;
+  font-family: system-ui, Roboto, sans-serif;
+  margin-left: 5%;
+  margin-top: -1%;
+}
 
-     }
-     
-     .red-div h2 {
-    margin-top: 0;
-    font-size: 1.5vw;
-     }
-     
-     .red-div img {
-      width: 40%;
-      height: auto;
-      object-fit: cover;
-      border-radius: 20px;
-      border: 2px solid black;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-right: 5vw; /* space between images */
-     }
-     
-     .red-div p {
-    margin-top: 20px;
-    flex: 1; 
-    margin-right: 10px;
-    margin-left: px ;
-    font-size: 1vw;
+.search-bar {
+  width: 500px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0px solid #1b1b1b;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 5px 1px rgba(104, 104, 104, 0.8);
+  background-color: #c7c7c7;
+  outline: none;
+  margin-left: 3%;
+  margin-top: -3%;
+}
 
-     }
+/* Stilar för röd behållare med bilder och text */
+.red-div {
+  background-color: rgb(192, 62, 34);
+  border-radius: 20px;
+  padding: 20px;
+  color: rgb(24, 24, 24);
+  width: 30%;
+  height: 50%;
+  margin-top: 1%;
+  margin-left: 5%;
+  font-size: 150%;
+  font-family: 'Caprasimo', serif;
+}
 
+.red-div h2 {
+  margin-top: 0;
+  font-size: 1.5vw;
+}
 
-     .bubble-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-     }
+.red-div img {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 2px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 5vw;
+}
 
-     .bubble-container-flex {
-      display: flex;
-      justify-content: space-between;
-  }
+.red-div p {
+  margin-top: 20px;
+  flex: 1;
+  margin-right: 10px;
+  margin-left: px;
+  font-size: 1vw;
+}
 
-  .quote-container {
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    padding: 1rem;
-    height: 135px;
-    margin-left: -450px;
-  }
+/* Stilar för flexcontainer och citatsektion */
+.bubble-container-flex {
+  display: flex;
+  justify-content: flex-start;
+}
 
-  .quote-text {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    margin: 0;
-  }
+.quote-container {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 1rem;
+  height: 135px;
+  margin-left: -7%;
+}
 
-  .quote-attribution {
-    font-size: 0.9rem;
-    margin: 0.5rem 0 0 0;
-  }
+.quote-text {
+  font-size: 1.2vw;
+  line-height: 1.5;
+  margin: 0;
+}
 
-  br {
-    display: block;
-    margin: 0.2rem 0;
-  }
+.quote-attribution {
+  font-size: 0.9rem;
+  margin: 0.5rem 0 0 0;
+}
 
-  .Gustavo{
-    width: 700px;
-  }
+/* Stilar för linjeskift */
+br {
+  display: block;
+  margin: 0.2rem 0;
+}
 
-  .container {
-    display: flex;
-    padding: 10px;
-    margin-left: 15%;
-    margin-top: 3%;
+/* Stilar för bild av Gustavo */
+.Gustavo {
+  width: 30%;
+  margin-left: 5%;
+}
+
+/* Stilar för menycontainer och knappar */
+.container {
+  display: flex;
+  padding: 10px;
+  margin-left: 15%;
+  margin-top: 3%;
 }
 
 .button-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 10px;
-	width: 15%;
-	transition: transform 0.3s, border 0.3s; /* Add a smooth transition for the transform property */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  width: 15%;
+  transition: transform 0.3s, border 0.3s;
 }
 
+/* Gör att knappen förstoras och får en border när musen är över den */
 .button-container button:hover {
-    transform: scale(1.1); /* Increase the size of the button when hovered */
-	border: 4px solid #380c0e; /* Add a border around the button on hover */
+  transform: scale(1.1);
+  border: 4px solid #380c0e;
 }
 
 .big-button {
-    background-color: rgb(192, 62, 34);
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-	height: 150px;
-    font-size: 40px;
+  background-color: rgb(192, 62, 34);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 150px;
+  font-size: 40px;
 }
 
-
+/* Stilar för menycontainer och menyobjekt */
 .menu-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
-    background-color: rgb(192, 62, 34);
-	  float: left;
-    width: 60%;
-    padding: 10px;
-    border-radius: 15px;
-	
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  background-color: rgb(192, 62, 34);
+  float: left;
+  width: 60%;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 .img-and-text {
-	display: flex;
-	align-items: center;
-   }
+  display: flex;
+  align-items: center;
+}
 
 .menu-item {
-    border: 1px solid #ccc;
-    padding: 10px;
-	border-radius: 15px;
-    overflow: hidden;
-	justify-content: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+  justify-content: center;
 }
 
 .menu-item h3 {
-    margin: 0;
+  margin: 0;
 }
 
 .menu-item-img {
-    width: 6vw;
-    height: 8vw;
-    border-radius: 10%;
-    border: 3px solid#380c0e;
-    object-fit: cover;
-} 
+  width: 6vw;
+  height: 8vw;
+  border-radius: 10%;
+  border: 3px solid #380c0e;
+  object-fit: cover;
+}
 
+/* Gör att opaciteten minskar när musen är över bilden */
 .menu-item-img:hover {
   opacity: 0.7;
-} 
+}
 
+/* Stilar för popup-fönster och overlay */
 .overlay {
   display: none;
   position: fixed;
@@ -264,16 +264,15 @@ body {
   margin-top: 10px;
 }
 
-/* Display the popup when the target is in the URL */
 .overlay:target {
   display: block;
 }
 
 .order-button{
-    background-color: rgb(0, 140, 255);
-    color: white;
-    border-radius: 10px;
-    margin-left: 5px;
+  background-color: rgb(0, 140, 255);
+  color: white;
+  border-radius: 10px;
+  margin-left: 5px;
 }
 
 .menu-item-pop-up {
@@ -296,17 +295,22 @@ body {
   margin-top: 10px;
 }
 
-.red-div {
-  width: 500px;
-  height: 600px;
+.red-div3 {
+  background-color: rgb(192, 62, 34);
+  border-radius: 20px;
   padding: 20px;
-  margin-left: 300px;
+  color: rgb(24, 24, 24);
+  width: 33%;
+  margin-top: 1%;
+  font-size: 150%;
+  font-family: 'Caprasimo', serif;
+  margin-left: 6vw;
 }
 .red-div2 {
-  width: 500px;
-  height: 300px;
+  width: 33%;
+  height: 25%;
   padding: 20px;
-  margin-left: 300px;
+  margin-left: 4vw;
   background-color: rgb(192, 62, 34);
   margin-top: 1%;
   border-radius: 5%;
@@ -318,6 +322,19 @@ body {
 .menu-items {
   display: flex;
   margin-top: 20px;
+}
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  
+}
+
+.total{
+  display: flex;
+  justify-content: space-between;
+  color: white;
 }
 
 .red-div img {
@@ -335,7 +352,7 @@ body {
 
 .remove-btn {
   display: block;
-  margin-left: 390px;
+  margin-left: 80%;
   margin-top: -30px;
   padding: 10px 20px;
   background-color: rgb(0, 55, 235);
@@ -347,24 +364,3 @@ body {
   cursor: pointer;
 
 }
-  
-  
-  /* Media Queries for responsiveness */
-  @media screen and (max-width: 600px) {
-    main {
-      padding: 10px;
-    }
-  
-    /* Adjust logo size for small screens */
-    .logo img {
-      max-height: 100px;
-    }
-
-    .logo {
-      left: 35vw ;
-    }
-
-    .banner {
-      height: 120px;
-    }
-  }
